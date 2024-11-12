@@ -1,0 +1,150 @@
+.navbar-nav .nav-link.active {
+    color:rgb(143, 142, 142);
+  
+  }
+  
+  .navbar-brand img {
+    width: 40px;
+  }
+  .card{
+    width: 18rem;
+  }  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Прижимаем содержимое группы к левому краю */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input, .form-group textarea,.form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .form-group input[type="file"] {
+    padding: 5px 0;
+  }
+  
+  #save {
+    padding: 10px 20px;
+    background-color:#FF9C1A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block; /* Делаем кнопку блочным элементом */
+    margin: 0 auto; /* Центрируем кнопку */
+  }
+  .add-button {
+    padding: 10px 20px;
+    background-color: #FF9C1A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 auto; /* Центрируем кнопку */
+}
+  
+  
+  .form-group button:hover {
+    background-color: rgb(252, 219, 176);
+  }
+  .delete-button { 
+    position: absolute;  
+    top: 0;  
+    right: 0;  
+    background-color: transparent; 
+    border: none; 
+    padding: 0.5rem; 
+    cursor: pointer;  
+  } 
+
+
+  #image-container {
+    text-align: center; /* Центрируем содержимое контейнера */
+  }
+  
+  #image-container img {
+    max-width: 300px; /* Максимальная ширина изображения */
+    max-height: 300px; /* Максимальная высота изображения */
+    display: block; /* Убираем отступы под изображением */
+    margin: 0 auto 10px; /* Центрируем изображение и добавляем отступ снизу */
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  width: 100%;
+  box-sizing: border-box;
+}

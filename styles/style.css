@@ -1,0 +1,124 @@
+
+:root {
+  --main-bg-color: #FFF8E7;
+  --alt-bg-color: rgba(255, 255, 255, 0.954);
+  --main-font-color: #FFFFFF;
+  --alt-font-color: rgba(0, 0, 0, 0.85);
+  --alt-font-color-light: rgba(0, 0, 0, 0.68);
+  --theme-primary: rgb(74, 199, 81);
+  --box-shadow: 2px 2px 7px -1px rgba(0, 0, 0, 0.75);
+}
+
+body.dark-mode {
+  --main-bg-color: rgb(0, 0, 0);
+  --alt-bg-color: rgb(89, 89, 89);
+  --main-font-color: #000000;
+  --alt-font-color: rgba(255, 255, 255, 0.85);
+  --alt-font-color-light: rgba(227, 227, 227, 0.68);
+  --theme-primary: #7965dc;
+}
+.navbar-nav .nav-link.active {
+  color:rgb(143, 142, 142);
+
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+.card{
+  width: 18rem;
+}
+
+
+.container-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-products > div { 
+  width: calc(100% / 3 - 20px); 
+  margin-bottom: 20px; 
+}
+.card-body { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;  
+  justify-content: center;  
+  position: relative;  
+} 
+
+.image { 
+  position: relative;  
+  margin-bottom: 1rem;  
+} 
+
+.image img { 
+  width: 10rem;  
+  height: auto;  
+} 
+
+.delete-button { 
+  position: absolute;  
+  top: 0;  
+  right: 0;  
+  background-color: transparent; 
+  border: none; 
+  padding: 0.5rem; 
+  cursor: pointer;  
+} 
+
+.card-title { 
+  text-align: center;  
+  margin-bottom: 0.5rem;  
+} 
+
+.card-text { 
+  text-align: center;  
+} 
+
+.edit-button { 
+  margin-top: 1rem;  
+  background-color: #FF9C1A;
+}
+
+
+.delete-button {
+  position: absolute;
+  top: 10px; 
+  right: 0px; 
+  
+}
+.history-button { 
+  margin-top: 1rem;  
+  background-color: #FF9C1A;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
